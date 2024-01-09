@@ -1,4 +1,4 @@
-# Comandos Terraform
+# Comandos Terraform <img src="https://raw.githubusercontent.com/brunocarvalho9810/commands-terraform/master/pt-br.png" style="height:50px; width:50px" />
 
 Este repositório contém os materiais e exemplos utilizando Terraform.
 
@@ -54,5 +54,66 @@ Além dos exemplos neste repositório, você pode encontrar mais informações s
 Contribuições são bem-vindas! Se você encontrar algum problema nos exemplos ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Autor
+
+[Bruno Carvalho](https://github.com/brunocarvalho9810/)
+
+---
+
+# Terraform Commands <img src="https://raw.githubusercontent.com/brunocarvalho9810/commands-terraform/master/en.png" style="height:40px; width:40px" />
+
+This repository contains materials and examples using Terraform.
+
+## Repository Structure
+
+- [Folder sec3-terraform-basico](./sec3-terraform-basico): Contains examples of basic commands in Terraform.
+  - **Variables:** Examples of how to use variables in Terraform to make your configuration files more dynamic and reusable.
+  - **Locals:** Demonstration of how to use locals to declare intermediate values in your configuration files, making code maintenance and readability easier.
+  - **Outputs:** Examples of how to declare and use outputs in Terraform to expose information about your infrastructure after applying the configurations.
+  - **Interpolation:** Explanations on how to use interpolation in Terraform to reference values of variables and resources elsewhere in the code.
+  - **TFState:** Information about the Terraform state (tfstate) and how it is used to store information about the provisioned infrastructure.
+
+- [Folder sec4-terraform-intermediario](./sec4-terraform-intermediario): Contains examples of intermediate commands in Terraform.
+  - **Remote State S3:** Examples of how to configure remote storage of Terraform state in Amazon S3.
+  - **Built-in Functions:** Demonstration of Terraform's built-in functions and how to use them to manipulate and transform data.
+  - **Data Sources:** Explanations on how to use data sources in Terraform to import information from existing resources in cloud providers or other sources.
+  - **Foreach, For, Splat Operator:** Examples of how to use these features to iterate over elements and dynamically create resources in Terraform.
+  - **Modules:** Information on how to organize and reuse code in Terraform using modules.
+  - **Workspaces:** Explanations on how to use workspaces in Terraform to manage multiple environments, such as development, staging, and production.
+
+## How to Use
+
+To use the examples in this repository and apply the concepts learned in the course, follow the steps below:
+
+1. **Configure AWS Credentials:**
+   - Before you start, make sure you have your AWS credentials configured on your machine. You can do this by setting the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables, or by using the `~/.aws/credentials` configuration file.
+
+2. **Clone the Repository:**
+   - Clone this repository to your local machine using the command:
+     ```
+     git clone https://github.com/brunocarvalho9810/commands-terraform
+     ```
+
+3. **Explore the Folders:**
+   - Navigate through the `/sec3-terraform-basico` and `/sec4-terraform-intermediario` folders to find examples of basic and intermediate Terraform commands, respectively.
+
+4. **Execute Terraform Commands:**
+   - For each folder, execute the following Terraform commands to apply the configurations:
+     - `terraform init`: Initializes the Terraform directory, downloading the necessary plugins.
+     - `terraform plan`: Generates an execution plan showing the changes that will be made to the infrastructure.
+     - `terraform apply`: Applies the changes defined in the Terraform files to provision or alter the infrastructure.
+     - `terraform destroy`: Removes the provisioned infrastructure according to the Terraform definitions.
+
+5. **Customize and Experiment:**
+   - Customize the examples as needed and try different configurations to better understand how Terraform works.
+
+## Additional Resources
+
+In addition to the examples in this repository, you can find more information about Terraform in the [official Terraform documentation](https://www.terraform.io/docs/index.html).
+
+## Contributions
+
+Contributions are welcome! If you encounter any issues with the examples or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## Author
 
 [Bruno Carvalho](https://github.com/brunocarvalho9810/)
